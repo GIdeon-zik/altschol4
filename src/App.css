@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: aliceblue;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+  overflow: auto;
+  background: #e8f1fc;
+  margin: 30px auto;
+  border: 1px solid steelblue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Nav */
+.nav-container {
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  padding: .1em 2em;
+}
+
+.link:hover {
+  border-bottom: 1px solid steelblue;
+}
+
+/* Home */
+.home-container {
+  text-align: center;
+  color: grey;
+}
+
+/* "Get" button */
+.getBtn {
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.getBtn:focus {
+  outline: none;
+}
+
+/* Users */
+.loading {
+  color: steelblue;
+}
+
+.app-user {
+  width: auto;
+  height: auto;
+}
+
+.list {
+  padding: 12px 8px 12px 40px;
+  background: aliceblue;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+}
+
+img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid steelblue;
+}
+
+.app-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-icons .fas {
+  margin: 0.3em;
+  transition: all 0.2s ease;
+}
+
+.app-icons .fas:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.phrase {
+  color: lightslategray;
+}
+
+/* Pagination */
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination button {
+  padding: 2px 8px;
+  transition: background-color .3s;
+  margin: 20px 4px;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.pagination button.active {
+  background-color: steelblue;
+  color: white;
+  border: 1px solid steelblue;
+}
+
+.pagination button:hover {
+  transform: scale(1.1);
+}
+
+.pagination button:disabled {
+  background-color: grey;
+}
+
+/* Page Not Found */
+.page-not-found h1 {
+  font-size: clamp(5rem, 40vmin, 20rem);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1rem;
+  text-shadow: 10px 10px 5px grey;
+  color: steelblue;
+}
+
+.page-not-found h2 {
+  font-weight: 500;
+  color: grey;
+}
+
+.page-not-found p {
+  font-weight: 100;
+  color: grey;
+}
+
+/* Button */
+.button {
+  padding: 1.5em;
+  margin: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: 0 0 3px 2px var(--grey);
+}
